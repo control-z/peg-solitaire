@@ -169,7 +169,7 @@
       });
 
       var reset = function() {
-        board = start;
+        board = start.map(function(a) { return a.slice(0); });
         draw();
       };
 
